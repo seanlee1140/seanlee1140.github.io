@@ -2,24 +2,35 @@
 permalink: /projects/
 title: "Projects"
 excerpt: "A collection of my projects."
-layout: collection
-collection: projects
-entries_layout: grid
+layout: single
+# collection: projects
+# entries_layout: grid
 classes: wide
+author_profile: false
+sidebar:
+  nav: "project_sidebar"
 ---
 
-Here are some of my previous projects.
+This is a collection of brief summaries of my previous projects. For more details, please visit the individual project pages.
 
-## Litter Pickup Drone
 
-*Description of project 1.*
 
-## Chess.com Integrated Automatic Chess Board
 
-*Description of project 2.*
 
-## Arcade Game Controller
+{% for project in site.projects %}
 
-*Created a personalized arcade game (Tekken) controller with 3D printed case & buttons. Used Arduino Uno with rewritten firmware in DFU mode to emulate a USB gamepad. Features hinged lid for easy access to electronics and swappable mechanical keyboard switches.*
+<div class="project-entry" style="margin-bottom: 3em;">
+  <h2 class="archive__item-title no_toc">
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+  </h2>
 
-![Arcade Game Controller](/assets/MK5 iso.png)
+  {{ project.excerpt }}
+
+  {% if project.header.teaser %}
+    <div class="project-image" style="margin-top: 1em;">
+      <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: auto; max-width: 600px;">
+    </div>
+  {% endif %}
+</div>
+
+{% endfor %}

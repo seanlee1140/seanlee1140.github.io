@@ -4,5 +4,16 @@ main:
     url: /about/
   - title: "Projects"
     url: /projects/
-  - title: "Posts"
-    url: /year-archive/
+
+project_sidebar:
+  - title: "Projects"
+    url: /projects/
+    children:
+      - title: "Litter Pickup Drone"
+        url: /projects/litter-pickup-drone/
+      - title: "Automatic Chess Board"
+        url: /projects/chess-board/
+      - title: "Arcade Game Controller"
+        url: /projects/arcade-game-controller/
+      - title: "Sample Project"
+        url: /projects/sample-project/

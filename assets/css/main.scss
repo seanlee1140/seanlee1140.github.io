@@ -1,9 +1,37 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
-
-@charset "utf-8";
+--- # Only the main Sass file needs front matter (the dashes are enough) --- @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Custom Project List Styling */
+.project-list-image img {
+    border-radius: 4px;
+    /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow */
+}
+
+/* Force Reset for Large Screens */
+@media (min-width: 64em) {
+
+    /* 1024px and up */
+    .wide .page,
+    .wide .archive {
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .page__inner-wrap {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-right: 0 !important;
+    }
+
+    .page__content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+}

@@ -1,15 +1,19 @@
 ---
 title: "Sample Project"
+layout: single
+author_profile: false
+sidebar:
+  nav: "project_sidebar"
 excerpt: "This is a sample project entry."
 header:
   teaser: assets/images/screenshot-layouts.png
-sidebar:
-  - title: "Role"
-    image: assets/images/screenshot-layouts.png
-    image_alt: "logo"
-    text: "Designer, Front-End Developer"
-  - title: "Responsibilities"
-    text: "UI/UX Design, HTML/CSS"
+# sidebar:
+#   - title: "Role"
+#     image: assets/images/screenshot-layouts.png
+#     image_alt: "logo"
+#     text: "Designer, Front-End Developer"
+#   - title: "Responsibilities"
+#     text: "UI/UX Design, HTML/CSS"
 gallery:
   - url: /assets/images/screenshot-layouts.png
     image_path: assets/images/screenshot-layouts.png
