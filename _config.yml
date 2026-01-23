@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Sean Lee's Project Portfolio" # [REPLACE_WITH_TITLE]
+title                    : "Project Portfolio" # [REPLACE_WITH_TITLE]
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "by Sean Lee" # site tagline that appears below site title in masthead
 name                     : "Sean Lee" # [REPLACE_WITH_NAME]
 description              : "A showcase of my projects and skills." # [REPLACE_WITH_DESCRIPTION]
 url                      : "https://seanlee1140.github.io"
@@ -114,13 +114,10 @@ analytics:
 author:
   name             : "Sean Lee" # [REPLACE_WITH_NAME]
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "My project portfolio." # [REPLACE_WITH_BIO]
+  bio              : "Mechatronics Engineer" # [REPLACE_WITH_BIO]
   location         : "Langley, BC, Canada" # [REPLACE_WITH_LOCATION]
   email            : "seanhlee411@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:seanhlee411@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/seanhlee411/"

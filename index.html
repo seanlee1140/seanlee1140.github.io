@@ -1,4 +1,141 @@
 ---
-layout: home
+layout: single
 author_profile: true
 ---
+<style>
+  /* FORCE HOME GRID STYLES */
+  .home-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0 !important;
+    /* Remove gap for vertical dividers */
+    margin-top: 10px !important;
+  }
+
+  .home-card {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 400px !important;
+    /* Taller Cards */
+    background: #fff;
+    border: none !important;
+    /* Remove Box Borders */
+    border-right: 1px solid #e0e0e0 !important;
+    /* Vertical Separator */
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: background-color 0.2s;
+  }
+
+  /* Remove border from the last card so there's no dangling line */
+  .home-card:last-child {
+    border-right: none !important;
+  }
+
+  .home-card:hover {
+    background-color: #fafafa;
+    /* Subtle hover effect instead of shadow */
+  }
+
+  .card-content {
+    padding: 20px 30px !important;
+    /* More breathing room */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content */
+  }
+
+  .home-card h3 {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    font-size: 1.25em;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+
+  /* Images Taller as well */
+  .image-container,
+  .single-image,
+  .grid-2x2 {
+    max-height: 200px !important;
+    /* Taller Images */
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .grid-2x2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    gap: 2px !important;
+  }
+
+  .image-container img {
+    object-fit: contain !important;
+  }
+
+  .grid-2x2 img {
+    object-fit: cover !important;
+    aspect-ratio: 1 / 1 !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  @media (max-width: 768px) {
+    .home-grid {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+      /* Restore gap on mobile */
+    }
+
+    .home-card {
+      border-right: none !important;
+      /* Remove vertical lines on mobile stack */
+      border-bottom: 1px solid #e0e0e0 !important;
+      /* Horizontal lines instead */
+      min-height: auto !important;
+    }
+
+    .home-card:last-child {
+      border-bottom: none !important;
+    }
+  }
+</style>
+
+<div class="home-grid">
+  <!-- About Card -->
+  <a href="/about/" class="home-card">
+    <div class="card-content">
+      <h3>About</h3>
+      <div class="image-container single-image">
+        <img src="/assets/Resume_Preview.png" alt="About Me - Resume Preview">
+      </div>
+    </div>
+  </a>
+
+  <!-- Projects Card -->
+  <a href="/projects/" class="home-card">
+    <div class="card-content">
+      <h3>Projects</h3>
+      <div class="image-container grid-2x2">
+        <img src="/assets/MK5 iso.png" alt="Project Thumb">
+        <img src="/assets/MK5 iso.png" alt="Project Thumb">
+        <img src="/assets/MK5 iso.png" alt="Project Thumb">
+        <img src="/assets/MK5 iso.png" alt="Project Thumb">
+      </div>
+    </div>
+  </a>
+
+  <!-- Placeholder Card -->
+  <div class="home-card placeholder">
+    <div class="card-content">
+      <h3>Coming Soon</h3>
+      <div class="image-container placeholder-box">
+        <!-- Empty or Icon -->
+      </div>
+    </div>
+  </div>
+</div>
