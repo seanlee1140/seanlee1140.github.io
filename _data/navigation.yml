@@ -15,5 +15,3 @@ project_sidebar:
         url: /projects/chess-board/
       - title: "Litter Pickup Drone"
         url: /projects/litter-pickup-drone/
-      - title: "Sample Project"
-        url: /projects/sample-project/
