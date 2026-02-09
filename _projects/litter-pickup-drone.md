@@ -22,6 +22,12 @@ Developed as a capstone project of my undergraduate degree in Mechatronics Engin
 
 The client envisions a drone that can autonomously fly to a user-identified litter location, pick up the litter, and return to the user for drop-off. As a first step towards this vision, our team is developing a drone that can be manually controlled to perform said task.
 
+## Drone Assembly
+
+The ideal drone should be able to carry a payload of approximately 500g, while being as nimble and stable as possible. To start, we decided to build a 10" quadcopter to serve as a testbed for our pickup mechanisms under development. After the pickup mechanism is finalized, we plan to reduce the size to a 7" quadcopter to improve maneuverability.
+
+We've selected to use a Pixhawk flight controller for its robust open-source firmware, especially since we plan to actuate a pickup mechanism using the flight controller. In terms of the signal infrastructure, after consulting a few FPV drone hobbiests and websites, we decided to use ELRS radio protocol and an analog video transmission system for its low latency and ease of use. 
+
 ## Pickup Mechanism
 
 We have considered a variety of pickup mechanisms, and the 3-pronged claw mechanism that I designed has been selected. Using a set of custom designed central worm gear and helical gears, this mechanism converts simple rotation input from a DC motor to opening/closing a claw. Inspired by a gripper mechanism by Festo, each of the TPU-printed prongs bend upon coming in contact with an object, allowing the claw to grip onto the object more securely. 
