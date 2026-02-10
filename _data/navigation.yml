@@ -15,3 +15,5 @@ project_sidebar:
         url: /projects/chess-board/
       - title: "Litter Pickup Drone"
         url: /projects/litter-pickup-drone/
+      - title: "Hydrone V2"
+        url: /projects/hydrone-v2/
