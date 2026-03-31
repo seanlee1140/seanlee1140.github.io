@@ -124,9 +124,9 @@ classes: wide
       <h3>Projects</h3>
       <div class="image-container grid-2x2">
         {% for project in site.projects limit:4 %}
-        {% if project.header.teaser %}
-        <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}">
-        {% endif %}
+          {% if project.header.teaser %}
+            <img src="{{ project.header.teaser | relative_url }}" alt="{{ project.title }}">
+          {% endif %}
         {% endfor %}
       </div>
     </div>
