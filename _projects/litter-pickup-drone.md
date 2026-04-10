@@ -6,7 +6,7 @@ sidebar:
   nav: "project_sidebar"
 excerpt: "Semi-autonomous drone that picks up litter from trails."
 header:
-  teaser: /assets/Drone_with_Claw.jpg
+  teaser: /assets/Litter_Drone_Poster.jpg
 gallery:
   - url: /assets/3-prong claw.png
     image_path: /assets/3-prong claw.png
@@ -18,6 +18,7 @@ gallery:
 
 Developed as a capstone project of my undergraduate degree in Mechatronics Engineering at the University of British Columbia, this project involved the design and development of a semi-autonomous drone that can pick up litter from trails. It is currently ongoing.
 
+![Litter Drone Poster](/assets/Litter_Drone_Poster.jpg)
 ![Drone with Claw](/assets/Drone_with_Claw.jpg)
 
 ## High-Level Design Overview
@@ -47,3 +48,5 @@ We have considered a variety of pickup mechanisms, and below is a design of the 
 ## Design Challenge: Downwash
 
 One of the main challenges we encountered during the design process was the downwash from the drone's propellers blowing litter items away from the claw. To mitigate this, we decided to use a smaller radius propellers to reduce the area of the downwash, and angle the motors slightly outwards to direct the airflow away from the center of the drone. 
+
+![Drone with Canted Motors](/assets/Drone_with_Canted_Motors.jpg)
